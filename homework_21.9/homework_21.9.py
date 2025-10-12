@@ -32,7 +32,8 @@ def read_morse_file(file_path):
 
 
 
-read_morse_file("C:\תבור\בית ספר\כיתה יב\סייבר\משימות רנדומליות\homework_21.9\morse1.txt")
+read_morse_file("")
+
 
 
 
