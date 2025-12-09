@@ -29,7 +29,7 @@ def maze_solve(maze):
     if maze[0][0] == 0 or maze[rows - 1][cols - 1] == 0:
         return False, []
 
-    visited = [[False] * cols for _ in range(rows)]
+    visited = [[False] * cols for i in range(rows)]
     path = []
 
     directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
@@ -51,7 +51,7 @@ def maze_solve(maze):
                     # recursive call
                     if dfs(new_r, new_c):
                         return True
-        # reset if failed
+        # reset if failed, to last good position
         path.pop()
         return False
 
